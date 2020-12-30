@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2CB14261259C834D00FB9E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB14260259C834D00FB9E83 /* AppDelegate.swift */; };
 		2CB14263259C834D00FB9E83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB14262259C834D00FB9E83 /* SceneDelegate.swift */; };
-		2CB14265259C834D00FB9E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB14264259C834D00FB9E83 /* ViewController.swift */; };
 		2CB14268259C834D00FB9E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB14266259C834D00FB9E83 /* Main.storyboard */; };
 		2CB1426A259C834F00FB9E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB14269259C834F00FB9E83 /* Assets.xcassets */; };
 		2CB1426D259C834F00FB9E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB1426B259C834F00FB9E83 /* LaunchScreen.storyboard */; };
+		2CB14279259C887600FB9E83 /* AmazonLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB14278259C887600FB9E83 /* AmazonLoginViewController.swift */; };
+		2CB1427D259C8A6A00FB9E83 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB1427C259C8A6A00FB9E83 /* BundleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CB1425D259C834D00FB9E83 /* KindleBookshelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindleBookshelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB14260259C834D00FB9E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CB14262259C834D00FB9E83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2CB14264259C834D00FB9E83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CB14267259C834D00FB9E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CB14269259C834F00FB9E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CB1426C259C834F00FB9E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB1426E259C834F00FB9E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CB14278259C887600FB9E83 /* AmazonLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonLoginViewController.swift; sourceTree = "<group>"; };
+		2CB1427C259C8A6A00FB9E83 /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				2CB14260259C834D00FB9E83 /* AppDelegate.swift */,
 				2CB14262259C834D00FB9E83 /* SceneDelegate.swift */,
-				2CB14264259C834D00FB9E83 /* ViewController.swift */,
+				2CB14278259C887600FB9E83 /* AmazonLoginViewController.swift */,
+				2CB1427C259C8A6A00FB9E83 /* BundleExtensions.swift */,
 				2CB14266259C834D00FB9E83 /* Main.storyboard */,
 				2CB14269259C834F00FB9E83 /* Assets.xcassets */,
 				2CB1426B259C834F00FB9E83 /* LaunchScreen.storyboard */,
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB14265259C834D00FB9E83 /* ViewController.swift in Sources */,
+				2CB14279259C887600FB9E83 /* AmazonLoginViewController.swift in Sources */,
 				2CB14261259C834D00FB9E83 /* AppDelegate.swift in Sources */,
 				2CB14263259C834D00FB9E83 /* SceneDelegate.swift in Sources */,
+				2CB1427D259C8A6A00FB9E83 /* BundleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
