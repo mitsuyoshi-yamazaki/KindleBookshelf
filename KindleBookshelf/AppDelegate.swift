@@ -33,10 +33,10 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let url = URL(string: "https://www.amazon.co.jp/mn/dcw/myx.html/ref=kinw_myk_redirect#/home/content/booksAll/dateDsc/") else {
             return
         }
-        let userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"
+        let macUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = [
-            "User-Agent": userAgent
+            "User-Agent": macUserAgent
         ]
         let session = URLSession(configuration: configuration)
         let task = session.dataTask(with: url) { data, response, error in

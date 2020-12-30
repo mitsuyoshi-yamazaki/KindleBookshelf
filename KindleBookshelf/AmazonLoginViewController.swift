@@ -12,7 +12,6 @@ final class AmazonLoginViewController: UIViewController {
     @IBOutlet private weak var webView: WKWebView! {
         didSet {
             webView.navigationDelegate = self
-            webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15"
         }
     }
 
@@ -31,8 +30,13 @@ final class AmazonLoginViewController: UIViewController {
         webView.load(URLRequest(url: url))
     }
 
-    private func getDom() {
-        let js = "document.documentElement.outerHTML.toString()"
+    private func getBooks() {
+        (0..<10).forEach(getBook(for:))
+    }
+
+    private func getBook(for index: Int) {
+        let id = "title\(index)"
+        let js = "document.getElementById('\(id)').innerHTML.toString()" // オブジェクトを返却する関数を呼び出す際はStringなどに変換しないとSwift側で受け入れられないようだ
         webView.evaluateJavaScript(js) { data, error in
             guard error == nil else {
                 print(error as Any)
@@ -50,8 +54,8 @@ extension AmazonLoginViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("\(#function), \(String(describing: navigation))")
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            self.getDom()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak self] in
+            self?.getBooks()
         }
     }
 
